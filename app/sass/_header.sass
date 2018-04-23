@@ -1,0 +1,81 @@
+.header
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  position: fixed;
+  top: 44px;
+  z-index: 10;
+  &-logo
+    width: 191px
+    height: 61px
+    background: url(../img/main-logo.png) center no-repeat
+    background-size: 100%
+  &-contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &__phone
+      font-size: 22px
+      margin-right: 13px
+      &s
+        display: flex
+      &:first-child
+        border-right: 1px solid #cfcfd0
+        padding-right: 13px
+    &__button
+      display: flex
+      &-img
+        content: ''
+        width: 20px
+        height: 20px
+        margin-right: 10px
+        background: url(../img/phone.png) center no-repeat
+        background-size: 100%
+
+.menu
+  position: fixed
+  top: 0
+  z-index: 11
+  width: 100%
+  background-color: $text-color-dark
+  &-nav
+    margin: 0
+    padding-top: 11px
+    padding-bottom: 11px
+    font-size: 14px
+    font-weight: 600
+    text-transform: uppercase
+    &__item
+      display: inline-block
+      position: relative
+      list-style: none
+      padding: 0 15px
+      &::after
+        content: ''
+        position: absolute
+        top: 4px
+        left: 0
+        width: 1px
+        height: 16px
+        background-color: #ffffff
+      &:first-child
+        &::after
+          content: none
+    &__link
+      color: #ffffff
+      &:hover
+        color: $active-color
+        text-decoration: none
+
+@keyframes move
+  from
+    opacity: 0
+    margin-bottom: -100px
+  to
+    opacity: 1
+    margin-bottom: 0
+
+.animate
+  animation: move
+  animation-duration: 2s

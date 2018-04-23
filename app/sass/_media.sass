@@ -1,0 +1,358 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .header
+    &-menu
+      &__btn
+        display: block
+
+  .main
+    &-img
+      width: 400px
+  .slick-slide
+    .main-img
+      img
+        width: 400px
+
+  .hiden-menu
+    display: none
+  .header
+    top: 0
+  .main
+    padding-top: 65px
+
+// ≥992px
++media-breakpoint-down(md)
+
+  .hidden-mobile
+    display: none
+
+  .menu-nav
+    font-size: 12px
+    font-weight: 600
+
+  .header
+    &-logo
+      width: 70%
+    &-contacts
+      &__phones
+        flex-direction: column
+      &__phone
+        font-size: 19px
+        font-weight: 600
+        margin-right: 0
+        &:first-child
+          border: none
+  
+  .main
+    &-text
+      margin: 0
+      &__title
+        font-size: 30px
+        font-weight: 600
+        line-height: 30px
+      &__subtitle
+        font-size: 24px
+        line-height: 24px
+        font-weight: 400
+        margin-bottom: 40px
+      &__form
+        background-color: transparent
+        padding: 10px
+
+  .numbers
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 24px
+
+  .features
+    &-blocks
+      flex-direction: row
+      
+    &-block
+      flex-basis: 48%
+      padding: 15px 10px 20px 5px
+
+  .products
+    &-block
+      &__img
+        width: 90%
+
+  .overlay
+    .popup
+      width: 450px
+      &-form
+        padding: 20px 20px
+        &__input
+          margin-bottom: 10px
+
+  .stock
+    &-text
+      &__qualification
+        font-size: 16px
+      &__descr
+        font-size: 14px
+
+  .detail
+    &-popup
+      width: 700px
+    &-advantages
+      &__item
+        flex-basis: 49%
+    &-form
+      &__input
+        margin-bottom: 10px        
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+
+  .header
+    &-logo
+      background: url(../img/logo-mob.svg) center no-repeat
+      width: 45px
+      height: 45px
+    &-contacts
+      &__phone
+        font-size: 16px
+
+  .clients
+    &-block
+      filter: none
+
+
+  .features
+    &-blocks
+      flex-direction: row
+    &-block
+      flex-basis: 48%
+      padding: 15px 10px 20px 5px
+
+  .stock
+    &-text
+      text-align: center
+      &__title
+        font-size: 20px
+      &__qualification
+        font-size: 16px
+      &__descr
+        margin-bottom: 20px
+
+  .detail
+    &-popup
+      width: 500px
+    &-descr
+      flex-direction: column
+      &__img
+        width: 80%
+      &__text
+
+    &-advantages
+      &__item
+        flex-basis: 49%
+    &-form
+      &__header
+        font-size: 24px
+        span
+          font-size: 18px
+      &__label
+        font-size: 18px
+      &__input
+        margin-bottom: 10px
+ 
+
+// ≥576px
++media-breakpoint-down(xs)
+
+  .header
+    &-contacts
+      &__phone
+        font-size: 14px
+        margin-right: 0
+        span
+          font-weight: 900
+
+      &__button
+        display: inline-block
+        padding: 3px
+        margin-right: 15px
+        &-img
+          margin: 0
+          background: url(../img/phone-mobile.png) center no-repeat
+
+  .main
+    text-align: center
+    &-section
+      &__one
+        padding-top: 50px
+      &__two
+        padding-top: 50px
+    &-text
+      margin: 0
+      &__title
+        font-size: 22px
+        font-weight: 600
+        line-height: 24px
+        color: $active-color
+      &__subtitle
+        font-size: 18px
+        line-height: 24px
+        font-weight: 400
+        margin-bottom: 40px
+      &__form
+        background-color: transparent
+        padding: 10px
+  .form
+    display: block
+    text-align: center
+    &-title
+      padding-right: 0
+      font-size: 15px
+      line-height: 1.4
+    &__input
+      margin-bottom: 10px
+      margin-right: 0
+      width: 260px
+
+  .features
+    &-blocks
+      flex-direction: column
+    &-block
+      padding: 15px 10px 20px 5px
+
+
+  .products
+    &-block
+      &__img
+        width: 100%
+
+  .production
+    padding-top: 30px
+    &-slider__bottom
+      margin-top: 22px
+      height: auto
+    &-text__title
+      padding-left: 0
+      margin-left: 0
+      width: 100%
+      text-align: center
+    &-text__descr
+      padding: 0
+      text-align: center
+
+  .offer
+    &-title
+      font-size: 20px
+      font-weight: 600
+      &__small
+        font-size: 16px
+        font-weight: 400
+    &-form
+      &__input
+        width: 260px
+      &__label
+        font-size: 14px
+        font-weight: 300
+
+  .clients
+    &-block
+      img
+        padding: 0 20px
+        width: 100%
+        max-height: 86px
+
+  .overlay
+    .popup
+      width: 290px
+      &-title
+        min-height: 50px
+        line-height: 50px
+        font-size: 18px
+      &-close
+        top: -6px
+        right: 8px
+      &-form
+        padding: 20px 20px
+        &__header
+          font-size: 24px
+          span
+            font-size: 20px
+        &__label
+          font-size: 16px
+        &__input
+          margin-bottom: 10px
+          width: 250px
+        &__btn
+          margin: 0
+
+  .contacts
+    &-block
+      position: static
+      text-align: center
+  .title
+    &-office
+      &::before
+        content: none
+  .title
+    &-phone
+      &::before
+        content: none
+  .title
+    &-mail
+      &::before
+        content: none
+
+  .detail
+    &-popup
+      width: 280px
+    &-title
+      font-size: 14px
+    &-close
+      font-size: 24px
+      right: 12px
+      top: 4px
+    &-descr
+      flex-direction: column
+      &__img
+        width: 80%
+      &__text
+    &-advantages
+      &__item
+        flex-basis: 100%
+    &-form
+      padding: 10px
+      &__header
+        font-size: 18px
+        font-weight: 600
+        span
+          font-size: 14px
+          font-weight: 400
+      &__label
+        margin: 5px
+        font-size: 14px
+      &__input
+        margin: 10px
+        width: 250px
+
+      
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
