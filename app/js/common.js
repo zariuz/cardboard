@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  //Phone Mask
+  $("#phone_one").inputmask({"mask": "+7 (999) 999-9999"});
+  $("#phone_two").inputmask({"mask": "+7 (999) 999-9999"});
+  $("#phone_three").inputmask({"mask": "+7 (999) 999-9999"});
+  $("#phone_four").inputmask({"mask": "+7 (999) 999-9999"});
+  $("#phone_five").inputmask({"mask": "+7 (999) 999-9999"});
+  $("#phone_six").inputmask({"mask": "+7 (999) 999-9999"});
+
   //Modal
   $('.button-modal').on("click", function(){
     $('.overlay').show()

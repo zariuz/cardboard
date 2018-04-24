@@ -109,6 +109,7 @@
       </div>
       <!-- /.container -->
     </header>
+    
     <section id="about" class="main main-slider">
       <div class="main-section__one">
         <div class="container">
@@ -137,7 +138,7 @@
                     </span>
                   </div>
                   <form action="#" class="form">
-                    <input class="form__input" type="tel" placeholder="Введите номер телефона">
+                    <input id="phone_one" class="form__input inputmask" type="tel" placeholder="Введите номер телефона" required>
                     <button class="button button_big" type="submit">Оставить заявку!</button>
                   </form>
                   <small class="form-small">*Минимальный заказ 500шт</small>
@@ -179,7 +180,7 @@
                     </span>
                   </div>
                   <form action="#" class="form">
-                    <input class="form__input" type="tel" placeholder="Введите номер телефона">
+                    <input id="phone_two" class="form__input" type="tel" placeholder="Введите номер телефона" required>
                     <button class="button button_big" type="submit">Оставить заявку!</button>
                   </form>
                   <small class="form-small">*Минимальный заказ 500шт</small>
@@ -448,7 +449,7 @@
         <div class="offer-form">
           <form action="#">
             <label class="offer-form__label" for="phone">Введите ваш номер телефона:</label>
-            <input class="offer-form__input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"><br>
+            <input id="phone_four" class="offer-form__input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"><br>
             <button class="button" type="submit">Оставить заявку!</button>
           </form>
           <small class="form-small">*Минимальный заказ 500шт</small>
@@ -681,7 +682,7 @@
             </div>
             
             <label for="phone" class="popup-form__label">Введите ваш номер телефона:</label>
-            <input type="tel" class="popup-form__input" name="phone" required>
+            <input type="tel" id="phone_three" class="popup-form__input" name="phone" placeholder="Введите номер телефона" required>
             <button class="button popup-form__btn">Оставить заявку!</button>
             <div class="popup-form__note">*Минимальный заказ 500шт</div>
             
@@ -771,7 +772,7 @@
             </div>
             
             <label for="phone" class="detail-form__label">Введите ваш номер телефона:</label>
-            <input type="tel" class="detail-form__input" name="phone" required>
+            <input type="tel" id="phone_five" class="detail-form__input" name="phone" placeholder="+7(555) 555-55-55" required>
             <button class="button detail-form__btn">Оставить заявку!</button>
             <div class="detail-form__note">*Минимальный заказ 500шт</div>
             
@@ -861,7 +862,7 @@
             </div>
             
             <label for="phone" class="detail-form__label">Введите ваш номер телефона:</label>
-            <input type="tel" class="detail-form__input" name="phone" required>
+            <input type="tel" id="phone_six" class="detail-form__input" name="phone" placeholder="+7(555) 555-55-55" required>
             <button class="button detail-form__btn">Оставить заявку!</button>
             <div class="detail-form__note">*Минимальный заказ 500шт</div>
             
@@ -876,5 +877,6 @@
 
     <script src="js/scripts.min.js"></script>
     <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
   </body>
 </html>
